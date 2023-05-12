@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CreateListActivity">
+
+
+    <EditText
+        android:id="@+id/listNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="List Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#3A3A3A"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/listDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="List Description"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#3A3A3A" />
+
+    <Button
+        android:id="@+id/createListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="createList"
+        android:text="CREATE" />
+</LinearLayout>
